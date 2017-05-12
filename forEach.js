@@ -25,14 +25,11 @@
 const collectionIterator = require('./_collectionIterator.js');
 
 function forEach(collection, func){
-    let items = collectionIterator(collection),
-        result;
-
+    let items = collectionIterator(collection);
     for (let item of items){
         func(item.value, item.key, item.collection);
-        result = result || item.collection;
     }
-    return result;
+    return collection;
 }
 
 module.exports = forEach;

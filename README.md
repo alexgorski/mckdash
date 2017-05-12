@@ -1,4 +1,4 @@
-#mckdash
+# mckdash
 This repo is my implementation of .forEach(), .map(), .reduce(), and .memoize().
 
 ## .forEach(), .map() and .reduce()
